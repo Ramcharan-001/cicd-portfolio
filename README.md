@@ -11,21 +11,23 @@ MAKE SURE MYSQL IS OPEN AND turotdb IS RUNNING
 DOCKER-
 docker compose build
 
-docker tag cicd-health-backend:latest ramcharan0101/cicd-health-backend:latest
+docker tag cicd-health-backend:latest ramcharan0101/cicd-portfolio-backend:latest
 
-docker tag cicd-health-frontend:latest ramcharan0101/cicd-health-frontend:latest
+docker tag cicd-health-frontend:latest ramcharan0101/cicd-portfolio-frontend:latest
 
 
 docker login
 
 
-docker push ramcharan0101/cicd-health-backend:latest
+docker push ramcharan0101/cicd-portfolio-backend:latest
 
-docker push ramcharan0101/cicd-health-frontend:latest
+docker push ramcharan0101/cicd-portfolio-frontend:latest
 
 
 kubectl apply -f k8s/backend-deployment.yaml
+
 kubectl apply -f k8s/frontend-deployment.yaml
+
 kubectl apply -f k8s/ingress.yaml
 
 kubectl get pods
