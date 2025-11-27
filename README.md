@@ -30,7 +30,6 @@ kubectl apply -f k8s/frontend-deployment.yaml
 
 kubectl apply -f k8s/ingress.yaml
 
-kubectl get pods
 
 kubectl get svc
 
