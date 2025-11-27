@@ -11,9 +11,9 @@ MAKE SURE MYSQL IS OPEN AND turotdb IS RUNNING
 DOCKER-
 docker compose build
 
-docker tag cicd-health-backend:latest ramcharan0101/cicd-portfolio-backend:latest
+docker tag cicd-portfolio-backend:latest ramcharan0101/cicd-portfolio-backend:latest
 
-docker tag cicd-health-frontend:latest ramcharan0101/cicd-portfolio-frontend:latest
+docker tag cicd-portfolio-frontend:latest ramcharan0101/cicd-portfolio-frontend:latest
 
 
 docker login
